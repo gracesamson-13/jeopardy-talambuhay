@@ -82,18 +82,16 @@
 				console.log('reset buzzer');
 				buzzed = false;
 			}
-		}
+		};
 
 		const handleCheckAnswer = (buzzGuess: string, socketId: string) => {
-			console.log(
-				`Guess: ${buzzGuess} for question: ${selectedQuestion.question} by ${socketId}`
-			);
+			console.log(`Guess: ${buzzGuess} for question: ${selectedQuestion.question} by ${socketId}`);
 			guess = buzzGuess;
-		}
+		};
 
 		const handleTimeUp = () => {
 			new Audio('https://www.myinstants.com/media/sounds/times-up.mp3').play();
-		}
+		};
 
 		socket.on('buzzed', handleBuzzed);
 		socket.on('checkAnswer', handleCheckAnswer);
@@ -111,9 +109,9 @@
 		});
 	});
 
-
 	import { scale } from 'svelte/transition';
 	import { onDestroy, onMount } from 'svelte';
+	import TimeWidget from './TimeWidget.svelte';
 	const isCorrect = $derived(selectedQuestion.answer.toLowerCase() === guess.toLowerCase().trim());
 	function submitAnswer(answer: string) {
 		clearInterval(answeringInterval); // stop the timer
@@ -139,7 +137,6 @@
 			new Audio('https://www.myinstants.com/media/sounds/rightanswer.mp3').play();
 		}
 	});
-	
 </script>
 
 <div class="modal" transition:scale={{ delay: 200 }}>
@@ -167,7 +164,7 @@
 				<p>{whoBuzzed} buzzed in first! guessing...</p>
 			{:else}
 				{#if isAnswering}
-					<p>You have {secondsLeft} seconds to answer!</p>
+					<TimeWidget {secondsLeft} />
 				{/if}
 				<input bind:value={userAnswer} placeholder="Enter your answer" />
 				<button
@@ -199,6 +196,8 @@
 	.question {
 		font-size: 1.5rem;
 		margin-bottom: 1rem;
+		display: flex;
+		flex-direction: column;
 	}
 	.modal {
 		position: fixed;
@@ -209,7 +208,6 @@
 		background: rgba(0, 0, 0, 0.9);
 		display: grid;
 		place-items: center;
-		opacity: 0.9;
 	}
 
 	.modal-content {
@@ -226,7 +224,6 @@
 		max-width: 100%;
 		max-height: 70vh;
 		height: auto;
-		display: block;
 		object-fit: contain; /* Ensures the whole image is visible */
 	}
 
