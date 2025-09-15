@@ -6,15 +6,14 @@ const sortQuestions = (questions: { points: number; question: string; answer: st
 const pastQuestions: Question[] = sortQuestions([
     {
         points: 100,
-        question: 'Childhood NYC borough',
-        answer: 'The Bronx',
+        question: 'What Roblox game is this from?',
+        imgSrc: "https://th.bing.com/th/id/OIP.JlKBa4RFQS-vKsceUUCXmwHaD4?w=275&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3",
+        answer: 'Adopt me',
     },
     {
         points: 200,
-        question:
-            'What country flag is this?',
-        imgSrc: "https://www.bing.com/ck/a?!&&p=d36567aea8ed349622b21f2620adc68e8b3ed01d9378300378748193f3af6e24JmltdHM9MTc1NzU0ODgwMA&ptn=3&ver=2&hsh=4&fclid=24753c92-2c28-6c17-10ef-2abf2d4f6daf&u=a1L2ltYWdlcy9zZWFyY2g_cT1ldGhpb3BpYW4rZmxhZyZpZD02RTNFQ0Q1OEYxMzM2MTJBOUI4NTlGQUI2RTRGQUI1MjVCN0UyOTVBJkZPUk09SVFGUkJB",
-        answer: 'Ethiopia',
+        question: 'NYC borough I lived in',
+        answer: 'Bronx',
     },
     {
         points: 300,
@@ -25,9 +24,10 @@ const pastQuestions: Question[] = sortQuestions([
     },
     {
         points: 400,
-        question: 'What roblox game is this from?',
-        imgSrc: "https://th.bing.com/th/id/OIP.JlKBa4RFQS-vKsceUUCXmwHaD4?w=275&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3",
-        answer: 'Adopt me',
+         question:
+            'What country flag is this?',
+        imgSrc: "https://www.bing.com/ck/a?!&&p=d36567aea8ed349622b21f2620adc68e8b3ed01d9378300378748193f3af6e24JmltdHM9MTc1NzU0ODgwMA&ptn=3&ver=2&hsh=4&fclid=24753c92-2c28-6c17-10ef-2abf2d4f6daf&u=a1L2ltYWdlcy9zZWFyY2g_cT1ldGhpb3BpYW4rZmxhZyZpZD02RTNFQ0Q1OEYxMzM2MTJBOUI4NTlGQUI2RTRGQUI1MjVCN0UyOTVBJkZPUk09SVFGUkJB",
+        answer: 'Ethiopia',
     }
 ]);
 
@@ -35,23 +35,20 @@ const presentQuestions: Question[] =
     sortQuestions([
         {
             points: 100,
-            question:
-                'The best ice cream flavor of all time is..',
-            imgSrc: 'https://www.daringgourmet.com/wp-content/uploads/2023/07/Cookies-and-Cream-Ice-Cream-Recipe-3.jpg',
-            answer: 'Cookies and cream', 
+            question: 'Who made this album?',
+            imgSrc: 'https://th.bing.com/th/id/OIP.qhyLO8I5p0-2UUthc-xCvQHaHa?w=199&h=199&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3',
+            answer: 'Drake', 
         },
         {
             points: 200,
-            question:
-                'Who is this?',
-            imgSrc: 'https://64.media.tumblr.com/tumblr_mdjwo2Nq361rw4zmjo1_640.png',
-            answer: 'Drake',
+            question:'The best ice cream flavor of all time is..',
+            imgSrc: 'https://www.daringgourmet.com/wp-content/uploads/2023/07/Cookies-and-Cream-Ice-Cream-Recipe-3.jpg',
+            answer: 'Cookies and cream',  
         },
         {
             points: 300,
-            question: 'Whats the best donut ever',
-            imgSrc: "https://th.bing.com/th/id/OIP.i-gx6wRmUOtn6wQ_T1IATwHaLH?w=186&h=279&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3",
-            answer: 'Boston Cream'
+            question: 'Current Instrument at HM',
+            answer: 'Steel Drum',
         },
         {
             points: 400,
@@ -61,25 +58,40 @@ const presentQuestions: Question[] =
     ]);
 const futureQuestions: Question[] = sortQuestions([
     {
-        points: 100,
-        question:
-            'Dream Ivy',
-            answer: 'Columbia'
-    }
+    points: 100,
+       question: 'Winter sport I will do',
+       answer: 'Basketball',
+    },
+    {
+       points: 200,
+    question: 'Race distance I want to PR this season (Km)',
+    answer: '5k',
+    },
+    {
+    points: 300,
+     question: 'Dream Ivy School (Hint: NY)',
+    answer: 'Columbia',
+    },
+    {
+    points: 400,
+    question: 'European country I want to visit',
+    answer: 'Italy',
+    },
+
 ]);
 
 
 const categories = [
     {
-        title: 'Past',
+        title: 'Grace - Past',
         questions: pastQuestions
     },
     {
-        title: 'Present',
+        title: 'Grace - Present',
         questions: presentQuestions
     },
     {
-        title: 'Future',
+        title: 'Grace - Future',
         questions: futureQuestions
     }
 ];
