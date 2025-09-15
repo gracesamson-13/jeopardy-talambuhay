@@ -6,83 +6,80 @@ const sortQuestions = (questions: { points: number; question: string; answer: st
 const pastQuestions: Question[] = sortQuestions([
     {
         points: 100,
-        question: 'What US state is the Land of Lincoln?',
-        answer: 'Illinois',
+        question: 'Childhood NYC borough',
+        answer: 'The Bronx',
     },
     {
         points: 200,
         question:
-            'Which country\'s flag is this?',
-        imgSrc: "https://cdn.britannica.com/34/4034-050-91EE1BCF/Flag-Myanmar.jpg",
-        answer: 'Myanmar',
+            'What country flag is this?',
+        imgSrc: "https://www.bing.com/ck/a?!&&p=d36567aea8ed349622b21f2620adc68e8b3ed01d9378300378748193f3af6e24JmltdHM9MTc1NzU0ODgwMA&ptn=3&ver=2&hsh=4&fclid=24753c92-2c28-6c17-10ef-2abf2d4f6daf&u=a1L2ltYWdlcy9zZWFyY2g_cT1ldGhpb3BpYW4rZmxhZyZpZD02RTNFQ0Q1OEYxMzM2MTJBOUI4NTlGQUI2RTRGQUI1MjVCN0UyOTVBJkZPUk09SVFGUkJB",
+        answer: 'Ethiopia',
     },
     {
         points: 300,
         question:
-            'What Ivy League school has the highest Native American enrollment (a whoppping 1%)?',
-        answer: 'Dartmouth',
+            'Where is this?',
+            imgSrc: "https://c8.alamy.com/comp/RYXNTH/new-york-usa-15th-mar-2019-the-vessel-is-seen-from-the-lobby-of-the-hudson-yards-mall-on-the-west-side-of-manhattan-on-its-grand-opening-day-friday-march-15-2019-retailers-including-the-neiman-marcus-department-store-opened-their-shops-in-the-development-which-was-built-on-a-platform-over-the-west-side-railroad-yards-office-residential-public-space-and-retail-space-comprise-the-first-phase-in-what-is-arguably-the-most-expensive-construction-project-ever-built-in-the-us-richard-b-levine-credit-richard-levinealamy-live-news-RYXNTH.jpg",
+        answer: 'Hudson Yards',
     },
     {
         points: 400,
-        question: 'Who wrote the Critique of Pure Reason?',
-        answer: 'Immanuel Kant',
+        question: 'What roblox game is this from?',
+        imgSrc: "https://th.bing.com/th/id/OIP.JlKBa4RFQS-vKsceUUCXmwHaD4?w=275&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3",
+        answer: 'Adopt me',
     }
 ]);
 
 const presentQuestions: Question[] =
     sortQuestions([
         {
-            points: 200,
-            question:
-                'What kind of rock is this?',
-            imgSrc: 'https://madera.objects.liquidweb.services/photos/16842-half-dome-closeup-from-glacier-point-steve-montalto-hmi-Rectangle-600x400.jpg',
-            answer: 'Granite',
-        },
-        {
             points: 100,
             question:
-                'What is this Cafe called?',
-            imgSrc: 'https://lh3.googleusercontent.com/p/AF1QipNsmB0ugJeJxYVrBKpRkNkyiEa6cKLamFZ4r0M=s1360-w1360-h1020',
-            answer: 'Chaotic Good',
+                'The best ice cream flavor of all time is..',
+            imgSrc: 'https://www.daringgourmet.com/wp-content/uploads/2023/07/Cookies-and-Cream-Ice-Cream-Recipe-3.jpg',
+            answer: 'Cookies and cream', 
+        },
+        {
+            points: 200,
+            question:
+                'Who is this?',
+            imgSrc: 'https://64.media.tumblr.com/tumblr_mdjwo2Nq361rw4zmjo1_640.png',
+            answer: 'Drake',
         },
         {
             points: 300,
-            question: 'What programming language is the below code?',
-            imgSrc: '/programming_language.png',
-            answer: 'Javascript',
+            question: 'Whats the best donut ever',
+            imgSrc: "https://th.bing.com/th/id/OIP.i-gx6wRmUOtn6wQ_T1IATwHaLH?w=186&h=279&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3",
+            answer: 'Boston Cream'
         },
         {
             points: 400,
-            question:
-                'Who painted this?',
-            imgSrc:
-                "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjb1tCOwOdOeYcp5iflCvvW95qCqpmNUo-TMIt3ndxzsxzmgmH18iClIIQLPO48ojPg5Rts2AUm9rZBeVPcjnjrjGaLSzCwbipQotY4EhOk3tUoHJjJyZjTqfY5s9MZ5eSkGrrqmom4JXUdHEqE-Ts8E9i-SuFf9xEukJcFBs5NuOhe6ANdODMFYzyV_Q/s16000/Unfinished.jpg",
-            answer: 'Keith Haring',
+            question:'Top favorite basketball team (Hint: Pennsylvania)',
+            answer: '76ers',
         }
     ]);
 const futureQuestions: Question[] = sortQuestions([
     {
         points: 100,
         question:
-            'This country is home to the Dolomites, which are a mountain range that has historical \'via ferratas\', iron cables and rungs, to aid traversing the peaks?',
-        imgSrc:
-            "https://laguidalpina.it/cdn/shop/products/ferrata-marmolada-cresta-ovest-Cristiano-Gregnanin-Guida-Alpina-Certificata-Dolomiti-5.jpg?v=1738870778",
-        answer: 'Italy',
+            'Dream Ivy',
+            answer: 'Columbia'
     }
 ]);
 
 
 const categories = [
     {
-        title: 'My Past',
+        title: 'Past',
         questions: pastQuestions
     },
     {
-        title: 'My Present',
+        title: 'Present',
         questions: presentQuestions
     },
     {
-        title: 'My Future',
+        title: 'Future',
         questions: futureQuestions
     }
 ];
