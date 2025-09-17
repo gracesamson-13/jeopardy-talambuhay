@@ -36,7 +36,7 @@ const presentQuestions: Question[] =
         {
             points: 100,
             question: 'Who made this album?',
-            imgSrc: 'https://th.bing.com/th/id/OIP.qhyLO8I5p0-2UUthc-xCvQHaHa?w=199&h=199&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3',
+            imgSrc: 'drake.jpg',
             answer: 'Drake', 
         },
         {
