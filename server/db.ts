@@ -33,7 +33,7 @@ const presentQuestions: Question[] =
     sortQuestions([
         {
             points: 100,
-            question: 'Who made the "Take Care" album?',
+            question:'Who made the "Take Care" album?',
             imgSrc: 'https://th.bing.com/th/id/ODL.f06a00be72fdf502627a85058941b84e?w=168&h=167&c=10&rs=1&o=6&dpr=2&pid=AlgoBlockDebug',
             answer: 'Drake', 
         },
