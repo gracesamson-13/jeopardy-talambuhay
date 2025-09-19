@@ -17,16 +17,14 @@ const pastQuestions: Question[] = sortQuestions([
     },
     {
         points: 300,
-        question:
-            'Where is this?',
+        question:'Where is this?',
             imgSrc: "https://c8.alamy.com/comp/RYXNTH/new-york-usa-15th-mar-2019-the-vessel-is-seen-from-the-lobby-of-the-hudson-yards-mall-on-the-west-side-of-manhattan-on-its-grand-opening-day-friday-march-15-2019-retailers-including-the-neiman-marcus-department-store-opened-their-shops-in-the-development-which-was-built-on-a-platform-over-the-west-side-railroad-yards-office-residential-public-space-and-retail-space-comprise-the-first-phase-in-what-is-arguably-the-most-expensive-construction-project-ever-built-in-the-us-richard-b-levine-credit-richard-levinealamy-live-news-RYXNTH.jpg",
         answer: 'Hudson Yards',
     },
     {
         points: 400,
-         question:
-            'What country flag is this?',
-        imgSrc:'ethiopia.png',
+         question:'What country flag is green, yellow, red, and has a blue star?',
+        imgSrc:'https://www.bing.com/ck/a?!&&p=a9fcb49407d8ff7075ecff98219c9c242a3d8fb796e62c2e2d7455351d974293JmltdHM9MTc1ODE1MzYwMA&ptn=3&ver=2&hsh=4&fclid=24753c92-2c28-6c17-10ef-2abf2d4f6daf&u=a1L2ltYWdlcy9zZWFyY2g_cT1ldGhpb3BpYStmbGFnJmlkPTZFM0VDRDU4RjEzMzYxMkE5Qjg1OUZBQjZFNEZBQjUyNUI3RTI5NUEmRk9STT1JUUZSQkE',
         answer: 'Ethiopia',
     }
 ]);
@@ -35,8 +33,8 @@ const presentQuestions: Question[] =
     sortQuestions([
         {
             points: 100,
-            question: 'Who made this album?',
-            imgSrc: 'drake.jpg',
+            question: 'Who made the "Take Care" album?',
+            imgSrc: 'https://th.bing.com/th/id/ODL.f06a00be72fdf502627a85058941b84e?w=168&h=167&c=10&rs=1&o=6&dpr=2&pid=AlgoBlockDebug',
             answer: 'Drake', 
         },
         {
