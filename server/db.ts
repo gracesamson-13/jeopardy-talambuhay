@@ -26,7 +26,7 @@ const pastQuestions: Question[] = sortQuestions([
         points: 400,
          question:
             'What country flag is this?',
-        imgSrc: "https://www.bing.com/ck/a?!&&p=d36567aea8ed349622b21f2620adc68e8b3ed01d9378300378748193f3af6e24JmltdHM9MTc1NzU0ODgwMA&ptn=3&ver=2&hsh=4&fclid=24753c92-2c28-6c17-10ef-2abf2d4f6daf&u=a1L2ltYWdlcy9zZWFyY2g_cT1ldGhpb3BpYW4rZmxhZyZpZD02RTNFQ0Q1OEYxMzM2MTJBOUI4NTlGQUI2RTRGQUI1MjVCN0UyOTVBJkZPUk09SVFGUkJB",
+        imgSrc:'ethiopia.png',
         answer: 'Ethiopia',
     }
 ]);
